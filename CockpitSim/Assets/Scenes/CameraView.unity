@@ -259,10 +259,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.631
       objectReference: {fileID: 0}
+    - target: {fileID: -8102145988954646241, guid: d8473b4f249ce944dade02e2f0df8da3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e8d552afa8c9cf04c859b155d20ef136, type: 2}
     - target: {fileID: 919132149155446097, guid: d8473b4f249ce944dade02e2f0df8da3, type: 3}
       propertyPath: m_Name
       value: Cockpit
       objectReference: {fileID: 0}
+    - target: {fileID: 4463271895493289417, guid: d8473b4f249ce944dade02e2f0df8da3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e8d552afa8c9cf04c859b155d20ef136, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8473b4f249ce944dade02e2f0df8da3, type: 3}
 --- !u!1 &1224506125
@@ -595,6 +603,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -361.05
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 2de81746e32204ed3af7861a79b3c358, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e8d552afa8c9cf04c859b155d20ef136, type: 2}
     - target: {fileID: 919132149155446097, guid: 2de81746e32204ed3af7861a79b3c358, type: 3}
       propertyPath: m_Name
       value: solidBackground
