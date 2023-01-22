@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class moveAroundWithMouse : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+private Vector3 cameraRotation;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        cameraRotation = transform.eulerAngles;
+
+        //turn left
+        if(Input.mousePosition.x <= Screen.width *0.05)
+        {
+            transform.Rotate(0, -0.1f, 0, Space.Self);
+        }
+        // turn right
+        else if(Input.mousePosition.x >= Screen.width * 0.95)
+        {
+            transform.Rotate(0, 0.1f, 0, Space.Self);
+        }
+        //turn down
+        if(Input.mousePosition.y <= Screen.height *0.05)
+        {
+            transform.Rotate(0.1f, 0, 0, Space.Self);
+        }
+        // turn up
+        else if(Input.mousePosition.y >= Screen.height * 0.95)
+        {
+            transform.Rotate(-0.1f, 0, 0, Space.Self);
+        }
     }
 }
