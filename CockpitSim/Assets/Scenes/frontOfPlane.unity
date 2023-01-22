@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 14380277}
   - component: {fileID: 14380276}
   - component: {fileID: 14380275}
-  - component: {fileID: 14380274}
   m_Layer: 5
   m_Name: cloud (7)
   m_TagString: Untagged
@@ -163,27 +162,6 @@ RectTransform:
   m_AnchoredPosition: {x: 206.79034, y: -1.2227898}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &14380274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14380272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &14380275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,7 +378,6 @@ GameObject:
   - component: {fileID: 80468445}
   - component: {fileID: 80468444}
   - component: {fileID: 80468443}
-  - component: {fileID: 80468442}
   m_Layer: 5
   m_Name: cloud (10)
   m_TagString: Untagged
@@ -428,27 +405,6 @@ RectTransform:
   m_AnchoredPosition: {x: -128.79031, y: -31}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &80468442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80468440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &80468443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,6 +559,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1315677883}
+        m_TargetAssemblyTypeName: music, Assembly-CSharp
+        m_MethodName: playAirplanes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &240586606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,7 +591,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: song 2
+  m_text: Airplanes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -963,7 +931,6 @@ GameObject:
   - component: {fileID: 401213034}
   - component: {fileID: 401213033}
   - component: {fileID: 401213032}
-  - component: {fileID: 401213031}
   m_Layer: 5
   m_Name: cloud (2)
   m_TagString: Untagged
@@ -991,27 +958,6 @@ RectTransform:
   m_AnchoredPosition: {x: 111.78241, y: 35.567673}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &401213031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401213029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &401213032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1152,7 +1098,6 @@ GameObject:
   - component: {fileID: 471709117}
   - component: {fileID: 471709116}
   - component: {fileID: 471709115}
-  - component: {fileID: 471709114}
   m_Layer: 5
   m_Name: cloud (5)
   m_TagString: Untagged
@@ -1180,27 +1125,6 @@ RectTransform:
   m_AnchoredPosition: {x: 60.418655, y: 133}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &471709114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471709112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &471709115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1899,6 +1823,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1315677883}
+        m_TargetAssemblyTypeName: music, Assembly-CSharp
+        m_MethodName: playtheNights
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &777945463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1919,9 +1855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'song 3
-
-'
+  m_text: The Nights
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2301,7 +2235,6 @@ GameObject:
   - component: {fileID: 905013284}
   - component: {fileID: 905013283}
   - component: {fileID: 905013282}
-  - component: {fileID: 905013281}
   m_Layer: 5
   m_Name: cloud (4)
   m_TagString: Untagged
@@ -2329,27 +2262,6 @@ RectTransform:
   m_AnchoredPosition: {x: -61.92586, y: 42.42427}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &905013281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905013279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &905013282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2586,7 +2498,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084492342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.000017325972}
+  m_LocalPosition: {x: 0, y: 0, z: -5.23}
   m_LocalScale: {x: 1.9868903, y: 1.9868902, z: 1.9868902}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2595,8 +2507,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 242.19377, y: 105.58486}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 218.19, y: 105.79}
+  m_SizeDelta: {x: 225.26, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1084492344
 MonoBehaviour:
@@ -2654,6 +2566,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1315677883}
+        m_TargetAssemblyTypeName: music, Assembly-CSharp
+        m_MethodName: playPaperPlanes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1084492345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2674,9 +2598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'song 1
-
-'
+  m_text: Paper Planes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2765,7 +2687,6 @@ GameObject:
   - component: {fileID: 1094498857}
   - component: {fileID: 1094498856}
   - component: {fileID: 1094498855}
-  - component: {fileID: 1094498854}
   m_Layer: 5
   m_Name: cloud (12)
   m_TagString: Untagged
@@ -2793,27 +2714,6 @@ RectTransform:
   m_AnchoredPosition: {x: -302.4986, y: -24.143398}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1094498854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094498852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &1094498855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2953,7 +2853,6 @@ GameObject:
   - component: {fileID: 1247572788}
   - component: {fileID: 1247572787}
   - component: {fileID: 1247572786}
-  - component: {fileID: 1247572785}
   m_Layer: 5
   m_Name: cloud (8)
   m_TagString: Untagged
@@ -2981,27 +2880,6 @@ RectTransform:
   m_AnchoredPosition: {x: 93.29173, y: -105}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1247572785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247572783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &1247572786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3155,6 +3033,152 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1315677880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1315677881}
+  - component: {fileID: 1315677883}
+  - component: {fileID: 1315677882}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1315677881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315677880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.846572, y: 62.753128, z: -77.19333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1315677882
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315677880}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ae6c57632bce9c743bb334cb45119563, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1315677883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315677880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad0d0a898b29454b8a0fa0dbf7e6bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSrc: {fileID: 1315677882}
+  airplanes: {fileID: 8300000, guid: ae6c57632bce9c743bb334cb45119563, type: 3}
+  paperPlanes: {fileID: 8300000, guid: bb29472a71cbfd2409a19d18681f4789, type: 3}
+  theNights: {fileID: 8300000, guid: bef8a54d0a5f08047a1eebffd85cb753, type: 3}
+  slide: {fileID: 1805328867}
 --- !u!1 &1410847862
 GameObject:
   m_ObjectHideFlags: 0
@@ -3487,7 +3511,6 @@ GameObject:
   - component: {fileID: 1473491940}
   - component: {fileID: 1473491939}
   - component: {fileID: 1473491938}
-  - component: {fileID: 1473491937}
   m_Layer: 5
   m_Name: cloud (11)
   m_TagString: Untagged
@@ -3515,27 +3538,6 @@ RectTransform:
   m_AnchoredPosition: {x: -189, y: 160}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1473491937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473491935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &1473491938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3624,7 +3626,6 @@ GameObject:
   - component: {fileID: 1518628911}
   - component: {fileID: 1518628910}
   - component: {fileID: 1518628909}
-  - component: {fileID: 1518628908}
   m_Layer: 5
   m_Name: cloud (6)
   m_TagString: Untagged
@@ -3652,27 +3653,6 @@ RectTransform:
   m_AnchoredPosition: {x: 333, y: -31}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1518628908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518628906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &1518628909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3946,7 +3926,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805328865}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1.8325427, y: 1.8325427, z: 1.8325427}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3958,7 +3938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 444, y: 237}
+  m_AnchoredPosition: {x: 397, y: 237}
   m_SizeDelta: {x: 160, y: 21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1805328867
@@ -4181,7 +4161,6 @@ GameObject:
   - component: {fileID: 1846872408}
   - component: {fileID: 1846872407}
   - component: {fileID: 1846872406}
-  - component: {fileID: 1846872405}
   m_Layer: 5
   m_Name: cloud (9)
   m_TagString: Untagged
@@ -4209,27 +4188,6 @@ RectTransform:
   m_AnchoredPosition: {x: -335.37164, y: 97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1846872405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846872403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &1846872406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4370,7 +4328,6 @@ GameObject:
   - component: {fileID: 1855336130}
   - component: {fileID: 1855336129}
   - component: {fileID: 1855336128}
-  - component: {fileID: 1855336127}
   m_Layer: 5
   m_Name: cloud (3)
   m_TagString: Untagged
@@ -4398,27 +4355,6 @@ RectTransform:
   m_AnchoredPosition: {x: 51.57276, y: 65.34488}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1855336127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855336125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &1855336128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4774,7 +4710,6 @@ GameObject:
   - component: {fileID: 2140511194}
   - component: {fileID: 2140511191}
   - component: {fileID: 2140511193}
-  - component: {fileID: 2140511192}
   m_Layer: 5
   m_Name: cloud (1)
   m_TagString: Untagged
@@ -4803,27 +4738,6 @@ MonoBehaviour:
   flapNormal: {fileID: 21300000, guid: 31c883f48e271fa4e8451ce46de2df32, type: 3}
   rudderRend: {fileID: 696766573}
   flapRend: {fileID: 808812855}
---- !u!114 &2140511192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140511190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b42cc567a9517d049bab6a1b31715e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySlider: {fileID: 1805328867}
-  rudderLeft: {fileID: 0}
-  rudderRight: {fileID: 0}
-  rudderNormal: {fileID: 0}
-  flapUp: {fileID: 0}
-  flapDown: {fileID: 0}
-  flapNormal: {fileID: 0}
-  rudderRend: {fileID: 0}
-  flapRend: {fileID: 0}
 --- !u!114 &2140511193
 MonoBehaviour:
   m_ObjectHideFlags: 0
