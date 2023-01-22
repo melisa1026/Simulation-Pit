@@ -11,4 +11,9 @@ public class OpenLink : MonoBehaviour
         Application.OpenURL("https://www.instagram.com/kidsfunplane2023/");
 
     }
+
+    public void OpenSpotifyChannel()
+    {
+        Application.OpenURL("https://open.spotify.com/?");
+    }
 }
