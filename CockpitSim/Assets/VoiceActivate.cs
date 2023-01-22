@@ -4,16 +4,16 @@ using UnityEngine;
 using UnityEngine.Windows.Speech;
 using System;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class VoiceActivate : MonoBehaviour
 {
-
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
     // Start is called before the first frame update
     void Start()
     {
-        actions.Add("Hello", Hello);
+        actions.Add("Insta", Insta);
         actions.Add("Stop", Stop);
 
 
@@ -27,12 +27,22 @@ public class VoiceActivate : MonoBehaviour
         actions[speech.text]();
     }
 
-    private void Hello(){
-        Vector3 rotationPoint = transform.position + new Vector3(0, 0, 1); // top point of the object
-        transform.RotateAround(rotationPoint, new Vector3(0, 0, 1), 45); // rotate 45 degrees around the right axis
+    private void Insta(){
+        StartCoroutine(cameraDown());
     }
 
     private void Stop(){
-        transform.Translate(-1, 0, 0);
+        transform.Translate(10, 0, 0);
+    }
+
+    public IEnumerator cameraDown()
+    {
+        for (int i = 0; i < 50; i ++)
+        {
+            transform.Translate(new Vector3(-0.2f, 0, 0));
+            yield return new WaitForSeconds(0.01f);
+        }
+        SceneManager.LoadScene("CameraView");
+        transform.Translate(10, 0, 0);
     }
 }
