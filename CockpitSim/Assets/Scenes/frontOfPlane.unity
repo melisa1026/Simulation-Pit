@@ -661,6 +661,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: planeNose
       objectReference: {fileID: 0}
+    - target: {fileID: 8632055958874330854, guid: 60bf0b1eb4ba13a4f96ca818cd995c67, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632055958874330854, guid: 60bf0b1eb4ba13a4f96ca818cd995c67, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 107
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60bf0b1eb4ba13a4f96ca818cd995c67, type: 3}
 --- !u!4 &1866526596 stripped
