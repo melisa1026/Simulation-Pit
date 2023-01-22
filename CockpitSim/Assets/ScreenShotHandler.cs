@@ -13,8 +13,8 @@ public class ScreenShotHandler : MonoBehaviour
         instance = this;
         myCamera = gameObject.GetComponent<Camera>();  
     }
-    private void onPostRender(){
-        
+    private IEnumerator onPostRender(){
+         yield return new WaitForSeconds(5);
         if(takeScreenShotOnNextFrame){
             takeScreenShotOnNextFrame = false;
             RenderTexture renderTexture = myCamera.targetTexture;
@@ -31,7 +31,11 @@ public class ScreenShotHandler : MonoBehaviour
             RenderTexture.ReleaseTemporary(renderTexture);
             myCamera.targetTexture = null;
             
+
+
             Debug.Log("Done and go back to scene frontOfPlane");
+            
+            yield return new WaitForSeconds(5);
             SceneManager.LoadScene("frontOfPlane");
 
         }
@@ -39,7 +43,7 @@ public class ScreenShotHandler : MonoBehaviour
     private void takeScreenShot(int width, int height){
         myCamera.targetTexture = RenderTexture.GetTemporary(width, height, 16);
         takeScreenShotOnNextFrame = true;
-        onPostRender();
+        StartCoroutine(onPostRender());
 
     }
     public static void TakeScreenShot_Static(int width, int height) {
@@ -55,8 +59,8 @@ public class ScreenShotHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-           ScreenShotHandler.TakeScreenShot_Static(Screen.width + 800, Screen.height + 100);
+           ScreenShotHandler.TakeScreenShot_Static(Screen.width + 500, Screen.height + 400);
+           Debug.Log("Screen Height : " + Screen.height + "Width: " + Screen.width);
            Debug.Log("Took CameraScreenShot");
        
        
