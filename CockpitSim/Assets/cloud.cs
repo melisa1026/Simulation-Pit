@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class cloud : MonoBehaviour
 {
-    private static int cloudHorizontal = 2; // 1: left, 2: straight, 3: right
+    public static int cloudHorizontal = 2; // 1: left, 2: straight, 3: right
     public Slider mySlider;
     public Sprite rudderLeft, rudderRight, rudderNormal, flapUp, flapDown, flapNormal;
     public Image rudderRend, flapRend;
@@ -33,6 +33,7 @@ public class cloud : MonoBehaviour
         {
             if(rudderRend != null)
                 rudderRend.sprite = rudderNormal;
+                
         }
 
 
