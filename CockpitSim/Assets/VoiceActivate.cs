@@ -43,6 +43,6 @@ public class VoiceActivate : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
         SceneManager.LoadScene("CameraView");
-        transform.Translate(10, 0, 0);
+        //transform.Translate(10, 0, 0);
     }
 }

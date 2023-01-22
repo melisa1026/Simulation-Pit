@@ -14,7 +14,7 @@ public class ScreenShotHandler : MonoBehaviour
         myCamera = gameObject.GetComponent<Camera>();  
     }
     private IEnumerator onPostRender(){
-         yield return new WaitForSeconds(5);
+         yield return new WaitForSeconds(2);
         if(takeScreenShotOnNextFrame){
             takeScreenShotOnNextFrame = false;
             RenderTexture renderTexture = myCamera.targetTexture;
@@ -35,7 +35,7 @@ public class ScreenShotHandler : MonoBehaviour
 
             Debug.Log("Done and go back to scene frontOfPlane");
             
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(4);
             SceneManager.LoadScene("frontOfPlane");
 
         }
